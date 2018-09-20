@@ -1,5 +1,10 @@
 ﻿namespace Algorithms
 {
+    /**
+     * HeapSort
+     * Best Case: Omega(NlogN)
+     * Worst Case: O(NlogN)
+     */
     public class HeapSort : Helper
     {
         int[] data;
