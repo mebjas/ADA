@@ -85,35 +85,6 @@
                 Console.WriteLine("Position of {0} = {1}", i, Search.BinarySearchNextGreatest(arr3, i));
             }
 
-            Console.WriteLine("Trie");
-            Trie t = new Trie();
-            List<string> keysToInsert = new List<string>() { "microsoft", "google", "micro", "face", "facebook" };
-            List<string> keysThatDoestExist = new List<string>() { "amazon", "apple", "facebo", "microsofts" };
-            keysToInsert.ForEach(key => t.Insert(key));
-            keysToInsert.ForEach(key =>
-            {
-                if (!t.Exists(key))
-                {
-                    Console.WriteLine("[failure] Expected key: {0} not found", key);
-                }
-                else
-                {
-                    Console.WriteLine("[success] Expected key: {0} found", key);
-                }
-            });
-
-            keysThatDoestExist.ForEach(key =>
-            {
-                if (!t.Exists(key))
-                {
-                    Console.WriteLine("[success] Not Expected key: {0} not found", key);
-                }
-                else
-                {
-                    Console.WriteLine("[failure] Not Expected key: {0} found", key);
-                }
-            });
-
             Console.ReadKey();
         }
     }
