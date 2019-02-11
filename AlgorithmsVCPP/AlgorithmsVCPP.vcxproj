@@ -153,6 +153,8 @@
   <ItemGroup>
     <ClInclude Include="Dequeue.h" />
     <ClInclude Include="pch.h" />
+    <ClInclude Include="SegmentTree.h" />
+    <ClInclude Include="TSP.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="AlgorithmsVCPP.cpp" />
@@ -163,6 +165,8 @@
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
     </ClCompile>
+    <ClCompile Include="SegmentTree.cpp" />
+    <ClCompile Include="TSP.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

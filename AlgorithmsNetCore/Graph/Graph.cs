@@ -38,6 +38,7 @@ namespace Algorithms
 
             this.adj[a].Add(b);
         }
+
         public void AddEdge(int a, int b, int weight)
         {
             if (a >= this.v || b >= this.v)
